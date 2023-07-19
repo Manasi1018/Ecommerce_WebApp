@@ -1,0 +1,240 @@
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+section {
+    padding: 20px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #393939 !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+.jumbotron {
+  width: 48vw;
+  margin: 1rem auto; 
+  padding: 1rem; 
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  background-image: url("{{ url_for('static', filename='https://cdn.corporatefinanceinstitute.com/assets/consumer-products.jpg') }}");
+}
+
+.container-card{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
+}
+
+.text-field{
+  background-color: transparent;
+}
+
+.ab {
+  background: url(https://cdn.corporatefinanceinstitute.com/assets/consumer-products.jpg) no-repeat;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 1150;
+}
+
+.card1{
+  background-color: #afeeee;
+  row-gap: 10px;
+  box-shadow: 1px .5px 5px rgb(66, 63, 63);
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.card1:hover{
+  box-shadow: 0px .2px 2px black;
+  transition: 1s;
+  translate: 0px -10px;
+
+}
+
+
+.card2{
+  background: linear-gradient(111.5deg, rgb(187, 232, 255) 11.1%, rgb(4, 78, 116) 107.5%);
+  row-gap: 10px;
+  box-shadow: 1px .5px 5px rgb(66, 63, 63);
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+  
+
+
+}
+
+.card2:hover{
+  box-shadow: 0px .2px 2px black;
+  transition: 1s;
+  translate: 0px -10px;
+
+}
+
+
+
+.card3{
+  background: linear-gradient(111.5deg, rgb(187, 232, 255) 11.1%, rgb(4, 78, 116) 107.5%);
+  row-gap: 10px;
+  box-shadow: 1px .5px 5px rgb(66, 63, 63);
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px
+}
+
+.card3:hover{
+  box-shadow: 0px .2px 2px black;
+  transition: 1s;
+  translate: 0px -10px;
+
+}
+
+
+.card4{
+  background: linear-gradient(111.5deg, rgb(187, 232, 255) 11.1%, rgb(4, 78, 116) 107.5%);
+  row-gap: 10px;
+  box-shadow: 1px .5px 5px rgb(66, 63, 63);
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px
+}
+
+.card4:hover{
+  box-shadow: 0px .2px 2px black;
+  transition: 1s;
+  translate: 0px -10px;
+
+}
+
+.card5{
+  background-color: linear-gradient( 45deg,
+  rgba(0,212, 255,1) 0%,
+  rgba(11,3,45,1) 100%
+  );
+  background: linear-gradient(111.5deg, rgb(187, 232, 255) 11.1%, rgb(4, 78, 116) 107.5%);
+  row-gap: 10px;
+  box-shadow: 1px .5px 5px rgb(7, 7, 7);
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px
+}
+
+.card5:hover{
+  box-shadow: 0px .2px 2px black;
+  transition: 1s;
+  translate: 0px -10px;
+
+}
+
+.product_detail{
+  background-color: #1773c4;
+}
+
+
+#card-img-top {
+  transition: transform .5s;
+&::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+  content: '';
+  opacity: 0;
+  z-index: -1;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
